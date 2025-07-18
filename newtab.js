@@ -1,4 +1,3 @@
-<script>
     const sectionIds = ['bookmarks', 'university', 'lifelists', 'phylogeny'];
     function showSection(id) {
       console.log('showSection called with id:', id);
@@ -15,26 +14,17 @@
     window.onload = function() {
       showSection('bookmarks');
     }
-</script>
-    
 
-    
-
-<script>
   const editable = document.getElementById('editable');
   // Load saved content on page load
   if (localStorage.getItem('myEditableContent')) {
     editable.innerHTML = localStorage.getItem('myEditableContent');
   }
   
-  // Save content on each input
   editable.addEventListener('input', () => {
     localStorage.setItem('myEditableContent', editable.innerHTML);
   });
-</script>
-    
-    
-    <script>
+
 let timerInterval;
 let totalSeconds = 5 * 60; // 25 minutes for a Pomodoro
 let remainingSeconds = totalSeconds;
@@ -74,4 +64,3 @@ function resetTimer() {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', updateDisplay);
-</script>
